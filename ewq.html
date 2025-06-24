@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARGEN PANEL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="panel">
+    <h3>Argen Panel</h3>
+    <h2>บริการขายไฟล์ดูดหัว</h2>
+
+    <label for="aim-assist">ดูดหัว</label>
+    <select id="aim-assist" name="aim-assist">
+      <option value="normal">ปกติ</option>
+      <option value="medium">กลาง</option>
+      <option value="high">สูง</option>
+    </select>
+
+    <div class="toggle-group">
+      <label>
+        Aimbot
+        <input type="checkbox" id="aimbot" name="features" value="aimbot" />
+      </label>
+      <label>
+        DPI 1999
+        <input type="checkbox" id="dpi" name="features" value="dpi_1999" />
+      </label>
+      <label>
+        FPS 540
+        <input type="checkbox" id="fps" name="features" value="fps_540" />
+      </label>
+      <label>
+        240 Hz
+        <input type="checkbox" id="hz" name="features" value="hz_240" />
+      </label>
+      <label>
+        จอสุมท
+        <input type="checkbox" id="jossumut" name="features" value="jossumut" />
+      </label>
+    </div>
+
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" id="anti-report" name="protections" value="anti_report" />
+        กันรายงาน
+      </label>
+      <label>
+        <input type="checkbox" id="anti-ban" name="protections" value="anti_ban" />
+        กันแบน
+      </label>
+      <label>
+        <input type="checkbox" id="anti-low" name="protections" value="anti_low" />
+        กันติดต่ำ
+      </label>
+      <label>
+        <input type="checkbox" id="clear-report-history" name="protections" value="clear_report_history" />
+        ลบประวัติการรายงาน
+      </label>
+    </div>
+
+    <div class="bottom-toggle">
+      <label>
+        ยืนยันการใช้ฟังชั่น
+        <input type="checkbox" id="confirm-use" name="confirm-use" value="confirmed" />
+      </label>
+    </div>
+  </div>
+</body>
+</html>

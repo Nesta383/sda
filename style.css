@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(135deg, #1f1f2e, #2d2d44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.panel {
+  background-color: #1b1b2f;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 300px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid #b478ff;
+}
+
+h2 {
+  text-align: center;
+  color: #c69aff;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-size: 15px;
+}
+
+select {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #292945;
+  color: white;
+  font-size: 14px;
+}
+
+.toggle-group label,
+.checkbox-group label,
+.bottom-toggle label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 22px;
+  background-color: #555;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #b478ff;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(18px);
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  appearance: checkbox;
+  margin-left: 10px;
+  position: static;
+}
+
+.checkbox-group label {
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.bottom-toggle {
+  margin-top: 20px;
+}
